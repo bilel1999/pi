@@ -1,0 +1,69 @@
+<!-- home.component.html -->
+
+<div class="container-fluid p-0">
+    <!-- Hero section -->
+    <section class="jumbotron text-center bg-primary text-white">
+      <div class="container">
+        <h1 class="display-4">Welcome to our Telemedicine Platform</h1>
+        <p class="lead">We provide cutting-edge solutions for remote cardiac monitoring.</p>
+        <app-nav></app-nav>
+      </div>
+    </section>
+  
+    <!-- Features section -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/heart.jpg" class="card-img-top" alt="Feature 1 image">
+            <div class="card-body">
+              <h5 class="card-title">Personalized Care</h5>
+              <p class="card-text">Our platform offers personalized care and support to help you manage and monitor your heart health effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/heartx.jpg" class="card-img-top" alt="Feature 2 image">
+            <div class="card-body">
+              <h5 class="card-title">Advanced Technology</h5>
+              <p class="card-text">Utilizing the latest in telemedicine and cardiac monitoring technology, we deliver accurate, real-time data for improved patient outcomes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/hearty.jpg" class="card-img-top" alt="Feature 3 image">
+            <div class="card-body">
+              <h5 class="card-title">Remote Consultations</h5>
+              <p class="card-text">Connect with experienced healthcare professionals from the comfort of your home, ensuring timely advice and treatment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- home.component.html -->
+...
+<!-- Heart statistics section -->
+<section class="container my-5">
+  <h2 class="mb-4">Heart Anomaly Statistics</h2>
+  <p>
+    The chart below shows the increasing number of deaths due to heart anomalies over the years. Our telemedicine platform aims to help reduce these numbers by providing timely diagnosis and treatment.
+  </p>
+  <app-heart-stats></app-heart-stats>
+</section>
+      <h3 class="mt-5">Follow us on social media:</h3>
+      <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/profile.php?id=100091668970286" target="_blank" class="mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/fcbayern" target="_blank" class="mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/fcbayern" target="_blank" class="mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </section>
+  
+   <!-- Call-to-action section -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4" style="color: white;">Ready to start monitoring your heart health?</h2>
+      <a class="btn btn-primary" routerLink="/signup">Sign up now</a>
+    </div>
+  </section>
+  

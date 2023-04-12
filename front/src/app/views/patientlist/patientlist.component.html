@@ -1,0 +1,45 @@
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="content" #content>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+      
+          <h1>Doctor list </h1>
+        </div>
+        <div class="col"> 
+        </div>
+      </div>
+    </div> 
+  <table [(ngModel)]="userList" class="table">
+    <thead>
+      <tr>
+        <th>Pictures</th>
+        <th>nom</th>
+        <th>Prenom</th>
+        <th>mail</th> 
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>                <img src="" alt="" width="10" height="10">
+
+            </td>
+            <td scope="row">
+                {{user.nom }}
+              </td>              <td>{{ user.prenom}}</td>
+              <td>{{ user.mail}}</td>
+            </tr>
+    </tbody>
+  </table>
+  <div class="d-flex justify-content-center">
+    <pagination-controls
+    (pageChange)="renderPage($event)"></pagination-controls>
+  </div>
+</div>
+
+
+  <div class="main">
+    <router-outlet></router-outlet>
+
+  </div>

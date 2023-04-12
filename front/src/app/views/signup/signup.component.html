@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-header bg-primary text-white text-center">
+            <h4>Sign Up</h4>
+          </div>
+          <div class="card-body">
+            <form class="form-signin">
+              <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+              <label for="fName" class="sr-only">First name</label>
+              <input type="text" name="nom"
+              [(ngModel)]="user.nom"class="form-control"
+              required #p="ngModel" placeholder="First name">
+              <label for="lName" class="sr-only">Last name</label>
+              <input type="text" name="prenom"
+              [(ngModel)]="user.prenom"class="form-control"
+              required #p="ngModel" placeholder="Last Name">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="text" name="mail"
+                [(ngModel)]="user.mail"class="form-control"
+                required #p="ngModel" placeholder="E-mail">
+                <label for="inputEmail" class="sr-only">Role</label>
+                <input type="text" name="role"
+                [(ngModel)]="user.role"class="form-control"
+                required #p="ngModel" placeholder="Your Role">
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="text" name="password"
+              [(ngModel)]="user.password"class="form-control"
+              required #p="ngModel" placeholder="Password">       
+              <button class="btn btn-lg btn-primary btn-block mt-3" type="submit" (click)="saveUser()">Sign Up</button>
+              <p class="mt-5 mb-3 text-muted">I Have an Account Already <a [routerLink]="['/login']" href="#">Login</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

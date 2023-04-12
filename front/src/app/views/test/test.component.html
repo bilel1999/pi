@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-header bg-primary text-white text-center">
+            <h4>Sign Up</h4>
+          </div>
+          <div class="card-body">
+            <form class="form-signin">
+              <h1 class="h3 mb-3 font-weight-normal">Please fill this <form action=""></form></h1>
+              <label for="fName" class="sr-only">Numero</label>
+              <input type="number" name="numero"
+              [(ngModel)]="user.numero"class="form-control"
+              required #p="ngModel" placeholder="Numero">
+              <label for="lName" class="sr-only">Age</label>
+              <input type="number" name="age"
+              [(ngModel)]="user.age"class="form-control"
+              required #p="ngModel" placeholder="Age">
+              <label class="sr-only">Sex:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="male" [(ngModel)]="user.sex" value="Male">
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="female" [(ngModel)]="user.sex" value="Female">
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              
+                <label for="inputEmail" class="sr-only">Weight</label>
+                <input type="number" name="weight"
+                [(ngModel)]="user.weight"class="form-control"
+                required #p="ngModel" placeholder="Your Weight">
+                <div class="form-group">
+                    <label for="chronicDisease">Do you have a chronic disease?</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="chronicDisease" id="chronicDiseaseYes" [(ngModel)]="user.chronicDisease" value="yes">
+                      <label class="form-check-label" for="chronicDiseaseYes">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="chronicDisease" id="chronicDiseaseNo" [(ngModel)]="user.chronicDisease" value="no">
+                      <label class="form-check-label" for="chronicDiseaseNo">
+                        No
+                      </label>
+                    </div>
+                    <div>
+                        <label for="ecgSignal">Upload ECG Signal:</label>
+                        <input type="file" id="ecgSignal" name="ecgSignal" accept=".csv">
+                      </div>
+                  </div>
+                       
+              <button class="btn btn-lg btn-primary btn-block mt-3" type="submit" (click)="saveUser()">Test</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
